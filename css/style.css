@@ -75,6 +75,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 80px;
+  color: #3377c5f2;
 }
 
 .menu {
@@ -115,7 +116,7 @@ body {
 
 .top {
 
-  min-height: calc(100svh - 81px);
+  min-height: 100svh;
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
