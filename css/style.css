@@ -63,11 +63,11 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #cacad6;
+  filter: brightness(50%);
 }
 
-.header {
-  border-bottom: 1px solid #000;
-
+.top {
+  height: 100svh;
 }
 
 .nav {
@@ -85,7 +85,7 @@ body {
 
 @media (width < 768px) {
   .menu {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -114,18 +114,13 @@ body {
   justify-content: center;
 }
 
-.top .header {
-
-  min-height: 100svh;
-}
-
-.top {
-
+body {
+  background-attachment: fixed;
   min-height: 100svh;
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
 }
 
 .title {
@@ -137,31 +132,39 @@ body {
   background: linear-gradient(16deg, rgba(46, 50, 250, 0.93) 0%, #ff99acf2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;  /* Изначально текст невидим */
-      transform: translateY(-40px); /* Сдвиг текста вверх */
-      animation: fadeInDown 1s ease-in-out forwards; /* Анимация */
-    }
+  opacity: 0;
+  /* Изначально текст невидим */
+  transform: translateY(-40px);
+  /* Сдвиг текста вверх */
+  animation: fadeInDown 1s ease-in-out forwards;
+  /* Анимация */
+}
 
-    /* Определение шагов анимации */
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;  /* Текст невидим */
-        transform: translateY(-30px); /* Текст выше своего места */
-      }
-      to {
-        opacity: 1;  /* Текст полностью видим */
-        transform: translateY(0); /* Текст на своём месте */
-      }
-    }
+/* Определение шагов анимации */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    /* Текст невидим */
+    transform: translateY(-30px);
+    /* Текст выше своего места */
+  }
+
+  to {
+    opacity: 1;
+    /* Текст полностью видим */
+    transform: translateY(0);
+    /* Текст на своём месте */
+  }
+}
 
 @media (width < 768px) {
   .title {
     line-height: 1.1;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 86px;
-    
+
   }
-  
+
 }
 
 
@@ -170,26 +173,40 @@ body {
   font-size: 36px;
   margin-bottom: 5px;
   font-weight: 600;
-  opacity: 0;  /* Изначально текст невидим */
-  transform: translateY(-40px); /* Сдвиг текста вверх */
-  animation: fadeInDown 2s ease-in-out forwards; 
+  opacity: 0;
+  /* Изначально текст невидим */
+  transform: translateY(-40px);
+  /* Сдвиг текста вверх */
+  animation: fadeInDown 2s ease-in-out forwards;
 }
+
+@media (width < 768px) {
+  .subtitle {
+    font-size: 20px;
+
+  }
+
+}
+
 
 .top__text {
   font-size: 13px;
   margin-bottom: 50px;
-  opacity: 0;  /* Изначально текст невидим */
-  transform: translateY(-40px); /* Сдвиг текста вверх */
-  animation: fadeInDown 2s ease-in-out forwards; 
+  opacity: 0;
+  /* Изначально текст невидим */
+  transform: translateY(-40px);
+  /* Сдвиг текста вверх */
+  animation: fadeInDown 2s ease-in-out forwards;
 }
 
 
 @media (width < 768px) {
   .top__text {
-    margin-bottom: 120px;
+    margin-bottom: 20px;
   }
-  
+
 }
+
 .buy__text {
   padding: 6px;
   font-size: 13px;
@@ -202,9 +219,11 @@ body {
   padding: 0;
   text-transform: uppercase;
   padding: 1px;
-  opacity: 0;  /* Изначально текст невидим */
-  transform: translateY(-40px); /* Сдвиг текста вверх */
-  animation: fadeInDown 3s ease-in-out forwards; 
+  opacity: 0;
+  /* Изначально текст невидим */
+  transform: translateY(-40px);
+  /* Сдвиг текста вверх */
+  animation: fadeInDown 3s ease-in-out forwards;
 }
 
 .buy-btn__text {
@@ -267,7 +286,7 @@ body {
 
 @media (width <768px) {
   .futures__text {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
 
   }
 }
@@ -293,9 +312,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  opacity: 0;  /* Изначально текст невидим */
-  transform: translateY(-40px); /* Сдвиг текста вверх */
-  animation: fadeInDown 1s ease-in-out forwards; 
+  opacity: 0;
+  /* Изначально текст невидим */
+  transform: translateY(-40px);
+  /* Сдвиг текста вверх */
+  animation: fadeInDown 1s ease-in-out forwards;
 }
 
 .tabs__btn-item {
@@ -366,13 +387,14 @@ body {
   align-items: start;
   padding: 9px 10px;
 }
+
 @media (width <768px) {
   .video {
 
-  
+
     width: 100%;
     height: 150px;
-  
+
   }
 }
 
@@ -589,7 +611,7 @@ body {
 }
 
 @media (width <768px) {
-  .promo{
+  .promo {
     min-height: 100svh;
   }
 }
@@ -606,7 +628,7 @@ body {
 }
 
 @media (width <768px) {
-  .promo__inner{
+  .promo__inner {
     min-height: 100svh;
   }
 }
@@ -749,6 +771,7 @@ body {
 .contacts__form {
   flex-basis: 600px;
 }
+
 @media (width < 768px) {
   .contacts__form {
     flex-basis: 200px;
@@ -841,9 +864,9 @@ dialog::backdrop {
   text-transform: uppercase;
   border: 1px solid #3377c5f2;
   padding: 10px 20px;
-}l
+}
 
-.button__text {
+l .button__text {
   text-transform: uppercase;
   font-size: 17px;
   font-family: inherit;
