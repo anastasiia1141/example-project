@@ -56,17 +56,6 @@ button {
   font-weight: 400;
 }
 
-body {
-  background-color: #181717;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #cacad6;
-  background-attachment: fixed;
-background-position: center;
-}
-
 .top {
   height: 100svh;
 }
@@ -118,10 +107,17 @@ background-position: center;
 body {
   background-attachment: fixed;
   min-height: 100svh;
-  background-image: url(../images/bg1.jpg);
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background: linear-gradient(89deg, rgb(0 0 0 / 93%) 0%, #4241b6f2 100%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #cacad6;
+
 }
 
 .title {
