@@ -114,6 +114,11 @@ body {
   justify-content: center;
 }
 
+.top .header {
+
+  min-height: 100svh;
+}
+
 .top {
 
   min-height: 100svh;
@@ -151,6 +156,7 @@ body {
 
 @media (width < 768px) {
   .title {
+    line-height: 1.1;
     margin-bottom: 40px;
     font-size: 86px;
     
