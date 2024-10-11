@@ -63,7 +63,8 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #cacad6;
-  filter: brightness(50%);
+  background-attachment: fixed;
+background-position: center;
 }
 
 .top {
